@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css\all.min.css">
+    <link rel="stylesheet" href="css\fontawesome.min.css">
+</head>
+<body>
+     <!--Navbar Section-->
+     <nav class="navbar">
+            <div class="navbar__container">
+                  <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                  </div>
+                  <ul class="navbar__menu">
+                      <li class="navbar__items">
+                        <a href="#car" class="navbar__links" id="car-page">Car </a>  
+                      </li>
+                      <li class="navbar__items">
+                        <a href="#driver" class="navbar__links" id="Driver-page">Driver</a>  
+                      </li>
+                       <li class="navbar__items">
+                        <a href="#carOwner" class="navbar__links" id="car-owner-page">Car Owner</a>  
+                      </li>
+                      <li class="navbar__items">
+                        <a href="#vehicle" class="navbar__links" id="Vehicle-type">Vehicle-type</a>  
+                      </li>
+                  </ul>
+              </div>  
+          </nav>
+
+          <!-- Car Section-->
+    <div class="container">
+
+            <div class="car" id="car">
+                <div class="car__container">
+                    <h1 class="car__heading">Car Section</h1>
+                    <form action="">
+                        <label for="CarPlateNumber">Car  Plate Number</label>
+                        <br>
+                        <input type="text" placeholder="Enter car plate number" required>
+                        <br>
+                       
+                            <label for="CarColor">Car Colour</label>
+                            <br>
+                            <input type="text" placeholder="Enter car colour" required>
+                            <br>
+                            <br>
+                            <label for="CarPlateNumber">Car picture</label>
+                            <br>
+                            <input type="file" id="img" name="img" accept="image/*" class="hidden">
+                            <br>
+                            <br>
+                            <label for="CarRegistrationNumber">Car Registration Number</label>
+                            <br>
+                            <input type="text" placeholder="Enter car reg number" required>
+                    </form>
+                </div>
+            </div>
+            
+
+                 <!-- Driver Section-->
+                <div class="driver" id="driver">
+                    <div class="driver__container">
+                        <h1 class="driver__heading">Driver's Section</h1>
+                            <form action="">
+                                    <label for="DriverName">Driver's Name</label>
+                                    <br>
+                                    <input type="text" placeholder="Enter Driver's Name" required>
+                                    <br>
+                                    <br>
+                                    <label for="PhoneNumber">Phone Number</label>
+                                    <br>
+                                    <input type="text" placeholder="Enter phone number" required>
+                                    <br>
+                                    <br>
+                                    <label for="Passport">Passport</label>
+                                    <br>
+                                    <label for="img">Select image:</label>
+                                    <br>
+                                    <input type="file" id="img" name="img" accept="image/*">
+
+                            </form>
+                    </div>
+                </div>
+
+                 <!-- car Owner's Section-->
+                 <div class="carOwner" id="carOwner">
+                        <div class="carowner__container">
+                            <h1 class="carOwner__heading">Car Owner's Section</h1>
+                                <form action="">
+                                        <label for="CarOwnerName">Car Owner's Name</label>
+                                        <br>
+                                        <input type="text" placeholder="Enter Car Owner's Name" required>
+                                        <br>
+                                        <br>
+                                        <label for="Car OwnerPhoneNumber">Car Owner's Phone Number</label>
+                                        <br>
+                                        <input type="text" placeholder="Enter Car Owner's phone number" required>
+                                       
+                                
+    
+                                </form>
+                        </div>
+                    </div>
+
+                 <!-- Vehicle Section-->
+                 <div class="vehicle" id="vehicle">
+                     <div class="vehicle__container">
+                         <h1 class="vehicle__heading">Vehicle Section</h1>
+                         <form action="">
+                             <label for="VehicleCompanyNumber">Vehicle Company Number </label>
+                             <br>
+                             <input type="text" placeholder="Enter car owner's name" required>
+                             <br>
+                             <br>
+                             <label for="VehicleType">Vehicle Type</label>
+                             <br>
+                             <select id="Vehicle" name="Vehicle">
+                                 <option value="volvo">Volvo XC90</option>
+                                 <option value="saab">Saab 95</option>
+                                 <option value="mercedes">Mercedes SLK</option>
+                                 <option value="audi">Audi TT</option>
+                                </select>
+                                <br>
+                                <br>
+                                <input type="submit" value="Submit">
+                                <br>
+                                <br>
+                            </form>
+                    </div>
+                </div>
+                
+    </div>
+</body>
+</html>
